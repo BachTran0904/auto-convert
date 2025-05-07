@@ -23,9 +23,14 @@
       },
       "Hàng hóa": {
         "Hàng hóa": ["Hàng hóa", "Hàng Hóa", "Sản Phẩm", "San Pham", "Hang Hoa", "hang hoa", "hàng hóa", "san pham", "Products", "Inventory"],
+        "Mã nhóm hàng": ["Mã nhóm hàng", "ma nhom hang", "Mã Nhóm Hàng", "Group Code", "Product Group", "Mã nhóm hàng (*)"],
+        "Tên nhóm hàng": ["Tên nhóm hàng", "ten nhom hang", "Tên Nhóm Hàng", "Group Name", "Product Group Name", "Tên nhóm hàng (*)"],
         "Mã hàng": ["Mã hàng", "ma hang", "Ma Hang", "Item Code", "Mã HH", "SKU", "Product Code", "Mã hàng (*)"],
         "Tên hàng": ["Tên hàng", "ten hang", "Ten Hang", "Item Name", "Product Name", "Tên HH", "Tên hàng (*)"],
-        "UOM": ["UOM", "Đơn vị tính", "Unit", "Unit of Measure", "Measurement Unit", "UOM (*)", "UOM HÀNG HOÁ (*)"]
+        "UOM": ["UOM", "Đơn vị tính", "Unit", "Unit of Measure", "Measurement Unit", "UOM (*)", "UOM HÀNG HOÁ (*)"],
+        "Chiều dài": ["Chiều dài", "chieu dai", "Chieu Dai", "Length", "Chiều dài (*),", "Chiều dài (CM)", "Chiều dài (Cm )", "Chiều dài \n(Cm )"],
+        "Rộng": ["Rộng", "rong", "Rong", "Width", "Rộng (*),", "Rộng (CM)", "Rộng (Cm )", "Rộng \n(Cm )"],
+        "Cao": ["Cao", "cao", "Cao", "Height", "Cao (*),", "Cao (CM)", "Cao (Cm )", "Cao \n(Cm )", "Cao ( Cm )"]
       },
       "Quy cách hàng hóa": {
         "Quy cách hàng hóa": ["Quy cách hàng hóa", "Quy cach hang hoa", "Product Configuration", "Item Specification", "QCHH"],
