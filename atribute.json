@@ -1,20 +1,12 @@
 {
     "Trường data": {
       "Tài xế": {
-        "Tài xế": ["Tài xế", "Tai xe", "tai xe", "Driver"],
-        "Mã tài xế": ["Mã tài xế", "ma tai xe", "Ma Tai Xe", "Mã TX", "Mã tài xế (*)", "Driver ID"],
-        "Mã xác nhận": ["Mã xác nhận", "ma xac nhan", "Ma Xac Nhan", "Mã XN", "Confirmation Code"],
-        "Họ": ["Họ", "ho", "Ho", "Họ (*)", "Last Name", "Surname"],
-        "Tên": ["Tên", "ten", "Ten", "Tên (*)", "First Name"],
-        "Ngày sinh": ["Ngày sinh", "ngay sinh", "Ngay Sinh", "DOB", "Ngày sinh (*)", "Birth Date"],
-        "Lái/phụ xe": ["Lái/phụ xe", "lai/phu xe", "Lai/Phu Xe", "Vai trò", "Driver Role", "Main/Sub Driver"],
-        "Ghi chú": ["Ghi chú", "ghi chu", "Ghi Chu", "Note", "Remarks"],
-        "Số xe": ["Số xe", "so xe", "So Xe", "Biển số", "Plate Number", "Vehicle No"],
-        "Điện thoại": ["Điện thoại", "dien thoai", "Dien Thoai", "SĐT", "Phone", "Phone Number"],
-        "Số CMND/CCCD": ["Số CMND/CCCD", "so cmnd/cccd", "CMND", "CCCD", "ID", "Identity No"],
-        "Loại bằng lái": ["Loại bằng lái", "loai bang lai", "License Type", "Driver License Class"],
-        "Số bằng lái": ["Số bằng lái", "so bang lai", "License No", "Driver License Number"],
-        "Ngày hết hạn bằng lái": ["Ngày hết hạn", "expiry date", "HSD bằng lái", "License Expiry", "Ngày HHBL"]
+        "Tài xế": ["Tài xế", "Tai xe", "tai xe", "Driver", "XE VÀ TÀI XẾ THẦU", "XE VÀ TÀI XẾ THẦU "],
+        "Mã tài xế": ["Mã tài xế", "ma tai xe", "Driver ID", "Driver Code", "STT"],
+        "Họ": ["Họ", "ho", "Ho", "Họ (*)", "Last Name", "Surname", "Tài xế(*)"],
+        "Tên": ["Tên", "ten", "Ten", "Tên (*)", "First Name", "Tài xế(*)"],
+        "Số xe": ["Số xe", "so xe", "So Xe", "Biển số", "Plate Number", "Vehicle No", "Số xe ( * )"],
+        "Số CMND/CCCD": ["Số CMND/CCCD", "so cmnd/cccd", "CMND", "CCCD", "ID", "Identity No", "CMND/CCCD(*)"]
       },
       "Quy cách sản phẩm": {
         "Quy cách sản phẩm": ["Quy cách sản phẩm", "Quy cach san pham", "Product Specification", "QCSP"],
@@ -22,15 +14,10 @@
         "Tên": ["Tên", "ten", "Ten", "Name", "Tên (*)", "Product Spec Name"]
       },
       "Hàng hóa": {
-        "Hàng hóa": ["Hàng hóa", "Hàng Hóa", "Sản Phẩm", "San Pham", "Hang Hoa", "hang hoa", "hàng hóa", "san pham", "Products", "Inventory"],
-        "Mã nhóm hàng": ["Mã nhóm hàng", "ma nhom hang", "Mã Nhóm Hàng", "Group Code", "Product Group", "Mã nhóm hàng (*)"],
-        "Tên nhóm hàng": ["Tên nhóm hàng", "ten nhom hang", "Tên Nhóm Hàng", "Group Name", "Product Group Name", "Tên nhóm hàng (*)"],
-        "Mã hàng": ["Mã hàng", "ma hang", "Ma Hang", "Item Code", "Mã HH", "SKU", "Product Code", "Mã hàng (*)"],
-        "Tên hàng": ["Tên hàng", "ten hang", "Ten Hang", "Item Name", "Product Name", "Tên HH", "Tên hàng (*)"],
-        "UOM": ["UOM", "Đơn vị tính", "Unit", "Unit of Measure", "Measurement Unit", "UOM (*)", "UOM HÀNG HOÁ (*)"],
-        "Chiều dài": ["Chiều dài", "chieu dai", "Chieu Dai", "Length", "Chiều dài (*),", "Chiều dài (CM)", "Chiều dài (Cm )", "Chiều dài \n(Cm )"],
-        "Rộng": ["Rộng", "rong", "Rong", "Width", "Rộng (*),", "Rộng (CM)", "Rộng (Cm )", "Rộng \n(Cm )"],
-        "Cao": ["Cao", "cao", "Cao", "Height", "Cao (*),", "Cao (CM)", "Cao (Cm )", "Cao \n(Cm )", "Cao ( Cm )"]
+        "Hàng hóa": ["Hàng hóa", "Hàng Hóa", "Sản Phẩm", "San Pham", "Hang Hoa", "hang hoa", "hàng hóa", "san pham", "Products", "Inventory", "thong tin sp", "SP"],
+        "Mã hàng": ["Mã hàng", "ma hang", "Ma Hang", "Item Code", "Mã HH", "SKU", "Product Code", "Mã hàng (*)", "Mã SP"],
+        "Tên hàng": ["Tên hàng", "ten hang", "Ten Hang", "Item Name", "Product Name", "Tên HH", "Tên hàng (*)", "Tên SP"],
+        "UOM": ["UOM", "Đơn vị tính", "Unit", "Unit of Measure", "Measurement Unit", "UOM (*)", "UOM HÀNG HOÁ (*)", "UOM1"]
       },
       "Quy cách hàng hóa": {
         "Quy cách hàng hóa": ["Quy cách hàng hóa", "Quy cach hang hoa", "Product Configuration", "Item Specification", "QCHH"],
@@ -42,31 +29,28 @@
         "Trọng tải net weight": ["Net weight", "TL Net", "Trọng lượng tịnh", "Khối lượng tịnh"]
       },
       "Sold-to": {
-        "Sold-to": ["Sold-to", "Customer", "Đối tác", "Khách hàng", "Partner", "Doi tac", "Khach hang"],
-        "Loại": ["Loại", "loai", "Type", "Partner Type", "Customer Type"],
-        "Mã đối tác hệ thống": ["Mã đối tác hệ thống", "ma doi tac he thong", "System Partner Code", "Internal Partner ID"],
-        "Mã đối tác sử dụng": ["Mã đối tác sử dụng", "ma doi tac su dung", "Partner Usage Code", "External Partner ID"],
-        "Tên đối tác": ["Tên đối tác", "ten doi tac", "Partner Name", "Customer Name"],
-        "Địa chỉ": ["Địa chỉ", "dia chi", "Address", "Full Address"],
-        "Tỉnh thành": ["Tỉnh thành", "tinh thanh", "Province", "City/Province"],
-        "Quận/Huyện": ["Quận/Huyện", "quan/huyen", "District", "County"],
-        "Phường/Xã": ["Phường/Xã", "phuong/xa", "Ward", "Commune"],
-        "SĐT": ["SĐT", "sdt", "Phone", "Phone Number"],
-        "Kinh độ": ["Kinh độ", "kinh do", "Longitude", "Lng"],
-        "Vĩ độ": ["Vĩ độ", "vi do", "Latitude", "Lat"],
-        "TG đóng hàng phân phối": ["TG đóng hàng PP", "Thời gian đóng hàng", "Loading Time", "Distribution Loading Time"],
-        "TG dỡ hàng phân phối": ["TG dỡ hàng PP", "Thời gian dỡ hàng", "Unloading Time", "Distribution Unloading Time"],
-        "Trọng tải xe tối đa": ["Trọng tải max", "Max Weight", "Tải trọng tối đa", "Maximum Capacity"]
+        "Sold-to": ["Sold-to", "Đối tác", "Nhà phân phối", "NHÀ PHÂN PHỐI", "NPP"],
+        "Mã đối tác hệ thống": ["Mã đối tác hệ thống", "ma doi tac he thong", "System Partner Code", "Internal Partner ID", "Mã Nhà phân phối ( * )\n(đặt mã viết hoa, k dấu cách, k ký tự đặc biệt)"],
+        "Mã đối tác sử dụng": ["Mã đối tác sử dụng", "ma doi tac su dung", "Partner Usage Code", "External Partner ID", "Mã Địa Chỉ Giao Hàng"],
+        "Tên đối tác": ["Tên đối tác", "ten doi tac", "Partner Name", "Customer Name", "Tên nhà phân phối(*)"],
+        "Địa chỉ": ["Địa chỉ", "dia chi", "Address", "Full Address", "Địa chỉ(*)"],
+        "Tỉnh thành": ["Tỉnh thành", "tinh thanh", "Province", "City/Province", "Tỉnh Thành(*)"],
+        "Quận/Huyện": ["Quận/Huyện", "quan/huyen", "District", "County", "Quận Huyện(*)"],
+        "SĐT": ["SĐT", "sdt", "Phone", "Phone Number", "SĐT(*)"],
+        "Kinh độ": ["Kinh độ", "kinh do", "Longitude", "Lng", "Kinh Độ"],
+        "Vĩ độ": ["Vĩ độ", "vi do", "Latitude", "Lat", "Vĩ Độ"]
       },
-      "Xe tải": {
-        "Xe tải": ["Xe tải", "Xe tai", "Truck", "Vehicle", "Danh sách xe", "DS xe"],
-        "Số xe": ["Số xe", "so xe", "Plate Number", "Biển số", "Vehicle No"],
-        "Trọng tải": ["Trọng tải", "trong tai", "Capacity", "Tải trọng", "Load Capacity"],
-        "Đăng ký": ["Đăng ký", "dang ky", "Registration", "Reg Date"],
-        "Tối thiểu": ["Tối thiểu", "toi thieu", "Minimum", "Min Capacity"],
-        "Tối đa": ["Tối đa", "toi da", "Maximum", "Max Capacity"],
-        "Mã loại xe": ["Mã loại xe", "ma loai xe", "Vehicle Type Code"],
-        "Tên loại xe": ["Tên loại xe", "ten loai xe", "Vehicle Type Name"]
+      "Ship-to": {
+        "Ship-to": ["Ship-to", "Đối tác", "Nhà phân phối", "NHÀ PHÂN PHỐI", "NPP"],
+        "Mã đối tác hệ thống": ["Mã đối tác hệ thống", "ma doi tac he thong", "System Partner Code", "Internal Partner ID", "Mã Nhà phân phối ( * )\n(đặt mã viết hoa, k dấu cách, k ký tự đặc biệt)"],
+        "Mã đối tác sử dụng": ["Mã đối tác sử dụng", "ma doi tac su dung", "Partner Usage Code", "External Partner ID", "Mã Địa Chỉ Giao Hàng"],
+        "Tên đối tác": ["Tên đối tác", "ten doi tac", "Partner Name", "Customer Name", "Tên Địa Chỉ Giao Hàng"],
+        "Địa chỉ": ["Địa chỉ", "dia chi", "Address", "Full Address", "Địa Chỉ Giao Hàng Cụ Thể(*)"],
+        "Tỉnh thành": ["Tỉnh thành", "tinh thanh", "Province", "City/Province", "Tỉnh Thành(*)"],
+        "Quận/Huyện": ["Quận/Huyện", "quan/huyen", "District", "County", "Quận Huyện(*)"],
+        "SĐT": ["SĐT", "sdt", "Phone", "Phone Number", "SĐT(*)"],
+        "Kinh độ": ["Kinh độ", "kinh do", "Longitude", "Lng"],
+        "Vĩ độ": ["Vĩ độ", "vi do", "Latitude", "Lat"]
       },
       "Khả năng lên hàng": {
         "Khả năng lên hàng": ["Khả năng lên hàng", "Kha nang len hang", "Loading Capacity", "Warehouse Capacity", "KNLH"],
@@ -74,14 +58,10 @@
         "Địa chỉ kho": ["Địa chỉ kho", "dia chi kho", "Warehouse Address"]
       },
       "Tài khoản": {
-        "Tài khoản": ["Tài khoản", "Tai khoan", "Account", "User", "Danh sách tài khoản", "DSTK"],
+        "Tài khoản": ["Tài khoản", "Tai khoan", "Account", "User", "Danh sách tài khoản", "DSTK", "DANH SÁCH TÀI KHOẢN NHÀ PHÂN PH"],
         "Họ": ["Họ", "ho", "Last Name", "Surname"],
         "Tên": ["Tên", "ten", "First Name", "Given Name"],
-        "Số điện thoại": ["Số điện thoại", "so dien thoai", "Phone", "Phone Number"],
-        "Tên tài khoản/Email": ["Tên TK/Email", "Username/Email", "Account Name", "Email"],
-        "Mật khẩu": ["Mật khẩu", "mat khau", "Password"],
-        "Mã vai trò": ["Mã vai trò", "ma vai tro", "Role Code"],
-        "Mã tài xế": ["Mã tài xế", "ma tai xe", "Driver ID", "Linked Driver ID"]
+        "Tên tài khoản/Email": ["Tên TK/Email", "Username/Email", "Account Name", "Email"]
       }
     }
   }
