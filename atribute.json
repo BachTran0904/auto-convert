@@ -20,20 +20,19 @@
         "UOM": ["UOM", "Đơn vị tính", "Unit", "Unit of Measure", "Measurement Unit", "UOM (*)", "UOM HÀNG HOÁ (*)", "UOM1"]
       },
       "Quy cách hàng hóa": {
-        "Quy cách hàng hóa": ["Quy cách hàng hóa", "Quy cach hang hoa", "Product Configuration", "Item Specification", "QCHH"],
-        "Mã nhóm hàng": ["Mã nhóm hàng", "ma nhom hang", "Group Code", "Product Group"],
-        "Mã hàng hóa": ["Mã hàng hóa", "ma hang hoa", "Item Code", "Product Code"],
-        "Mã quy cách": ["Mã quy cách", "ma quy cach", "Spec Code", "Specification Code"],
-        "Số lượng quy đổi": ["Số lượng quy đổi", "Conversion Qty", "Quy đổi", "Converted Quantity"],
-        "Trọng tải gross weight": ["Gross weight", "TL Gross", "Trọng lượng tổng", "Tổng trọng lượng"],
-        "Trọng tải net weight": ["Net weight", "TL Net", "Trọng lượng tịnh", "Khối lượng tịnh"]
+        "Quy cách hàng hóa": ["Quy cách hàng hóa", "Quy cach hang hoa", "Product Configuration", "Item Specification", "QCHH", "Hàng hóa"],
+        "Mã nhóm hàng": ["Mã nhóm hàng", "ma nhom hang", "Group Code", "Product Group", "Mã nhóm hàng (*)"],
+        "Mã hàng hóa": ["Mã hàng hóa", "ma hang hoa", "Item Code", "Product Code", "Mã hàng (*)"],
+        "Mã quy cách": ["Mã quy cách", "ma quy cach", "Spec Code", "Specification Code", "UOM NHÓM HÀNG (*)"],
+        "Trọng tải gross weight (kg)": ["Gross weight", "TL Gross", "Trọng lượng tổng", "Tổng trọng lượng", "Trọng tải(kg)"],
+        "Trọng tải net weight (kg)": ["Net weight", "TL Net", "Trọng lượng tịnh", "Khối lượng tịnh", "Trọng tải(kg)"]
       },
       "Sold-to": {
         "Sold-to": ["Sold-to", "Đối tác", "Nhà phân phối", "NHÀ PHÂN PHỐI", "NPP"],
         "Mã đối tác hệ thống": ["Mã đối tác hệ thống", "ma doi tac he thong", "System Partner Code", "Internal Partner ID", "Mã Nhà phân phối ( * )\n(đặt mã viết hoa, k dấu cách, k ký tự đặc biệt)"],
         "Mã đối tác sử dụng": ["Mã đối tác sử dụng", "ma doi tac su dung", "Partner Usage Code", "External Partner ID", "Mã Địa Chỉ Giao Hàng"],
         "Tên đối tác": ["Tên đối tác", "ten doi tac", "Partner Name", "Customer Name", "Tên nhà phân phối(*)"],
-        "Địa chỉ": ["Địa chỉ", "dia chi", "Address", "Full Address", "Địa chỉ(*)"],
+        "Địa chỉ": ["Địa chỉ", "dia chi", "Address", "Full Address", "Địa chỉ(*)", "Địa Chỉ Giao Hàng Cụ Thể(*)"],
         "Tỉnh thành": ["Tỉnh thành", "tinh thanh", "Province", "City/Province", "Tỉnh Thành(*)"],
         "Quận/Huyện": ["Quận/Huyện", "quan/huyen", "District", "County", "Quận Huyện(*)"],
         "SĐT": ["SĐT", "sdt", "Phone", "Phone Number", "SĐT(*)"],
@@ -58,7 +57,7 @@
         "Địa chỉ kho": ["Địa chỉ kho", "dia chi kho", "Warehouse Address"]
       },
       "Tài khoản": {
-        "Tài khoản": ["Tài khoản", "Tai khoan", "Account", "User", "Danh sách tài khoản", "DSTK", "DANH SÁCH TÀI KHOẢN NHÀ PHÂN PH"],
+        "Tài khoản": ["Tài khoản", "Tai khoan", "Account", "User", "Danh sách tài khoản", "DSTK", "DANH SÁCH TÀI KHOẢN NHÀ PHÂN PH", "DANH SÁCH TÀI KHOẢN USER CAC"],
         "Họ": ["Họ", "ho", "Last Name", "Surname"],
         "Tên": ["Tên", "ten", "First Name", "Given Name"],
         "Tên tài khoản/Email": ["Tên TK/Email", "Username/Email", "Account Name", "Email"]
