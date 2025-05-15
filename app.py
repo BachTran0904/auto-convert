@@ -5,7 +5,8 @@ import tempfile
 import subprocess
 from fastapi.responses import JSONResponse, FileResponse
 from pathlib import Path
-import uvicorn  # Add this import
+from typing import List
+import uvicorn
 
 app = FastAPI()
 
@@ -13,34 +14,48 @@ app = FastAPI()
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-@app.post("/upload")
-async def upload_and_process(file: UploadFile = File(...), form: UploadFile = File(...)):
-    # Create a temporary file to save the uploaded content
-    with tempfile.NamedTemporaryFile(delete=False, suffix=".xlsx") as temp_file:
-        content = await file.read()
-        temp_file.write(content)
-        temp_file_path = temp_file.name
 
-    with tempfile.NamedTemporaryFile(delete=False, suffix=".xlsx") as temp_file_form:
-        content = await form.read()
-        temp_file_form.write(content)
-        temp_file_form_path = temp_file_form.name
-    
-    # Define other file paths
-    attribute_json = 'C:/Github/auto-convert/atribute.json'
-    
+@app.post("/upload")
+async def upload_and_process(files: List[UploadFile] = File(...), form: UploadFile = File(...)):
+    temp_file_paths = []    
+    temp_file_form_path = None
+    #attribute_json = os.path.abspath('attribute.json')  # Use absolute path
+
     try:
-        # Run the mapping.py script
+        # Process all uploaded files
+        for file in files:
+            suffix = os.path.splitext(file.filename)[1] or '.bin'
+            with tempfile.NamedTemporaryFile(delete=False, suffix=suffix) as temp_file:
+                content = await file.read()
+                temp_file.write(content)
+                temp_file_paths.append(temp_file.name)
+        
+        # Process the form file
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".xlsx") as temp_file_form:
+            content = await form.read()
+            temp_file_form.write(content)
+            temp_file_form_path = temp_file_form.name
+
+        if len(temp_file_paths) < 1:
+            raise HTTPException(status_code=400, detail="At least one data file and one form file are required")
+                
+        # Build the command - note the order of arguments must match what mapping.py expects
+        command = ["python", "mapping.py"] + temp_file_paths + [temp_file_form_path]
+        logger.info(f"Running command: {' '.join(command)}")
+        
         result = subprocess.run(
-            ["python", "mapping.py", temp_file_path, temp_file_form_path, attribute_json],
+            command,
             capture_output=True,
             text=True
         )
         
-        # Clean up the temporary input file
-        os.unlink(temp_file_path)
-        
+        # Clean up the temporary input files
+        for path in temp_file_paths:
+            if os.path.exists(path):
+                os.unlink(path)        
+
         if result.returncode != 0:
+            logger.error(f"Script failed with error: {result.stderr}")
             raise HTTPException(status_code=400, detail=result.stderr)
             
         # Return the processed file for download
@@ -52,15 +67,19 @@ async def upload_and_process(file: UploadFile = File(...), form: UploadFile = Fi
         
     except Exception as e:
         # Clean up if something went wrong
-        if os.path.exists(temp_file_path):
-            os.unlink(temp_file_path)
+        for path in temp_file_paths:
+            if os.path.exists(path):
+                os.unlink(path)
+        if temp_file_form_path and os.path.exists(temp_file_form_path):
+            os.unlink(temp_file_form_path)
+        logger.error(f"Error in processing: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
-    
 
 @app.get("/get")
 async def getOutput():
     output = "Form.xlsx"
     return output
+
 
 # Add this block to run the application
 if __name__ == "__main__":
